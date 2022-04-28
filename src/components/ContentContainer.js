@@ -62,19 +62,19 @@ function ContentContainer( {menuState, itemsInCart, image, setImage, setItemsInC
             <img onClick={ ()=>{if(width >= 900) setImageSlide(true)}} src={imageProduct4} alt="product-4" className={`aspect-[4/3] ${(image === 4)? "block": "hidden"} md:rounded-md  md:cursor-pointer`}/>
 
             <div className="hidden md:flex md:justify-between md:mt-[3vh]">
-               <div className={`${image===1?"relative border-2 border-main-orange": ""} w-[17%] rounded-md`}><span className={`${image==1?"absolute bg-gray-400 opacity-40": ""}`}> 
+               <div className={`${image===1?"relative border-2 border-main-orange": ""} w-[17%] rounded-md`}><span className={`${image===1?"absolute bg-gray-400 opacity-40": ""}`}> 
                <img onClick={ () =>{ setImage(1)}} src={imageThumbanil1} alt="thumbnail-product-1" className="rounded-md  aspect-[8/7] md:hover:cursor-pointer"/>
                </span></div>
 
-               <div className={`${image===2?"relative border-2 border-main-orange": ""} w-[17%] rounded-md`}><span className={`${image==2?"absolute bg-gray-400 opacity-40": ""}`}> 
+               <div className={`${image===2?"relative border-2 border-main-orange": ""} w-[17%] rounded-md`}><span className={`${image===2?"absolute bg-gray-400 opacity-40": ""}`}> 
                <img onClick={ () =>{ setImage(2)}} src={imageThumbanil2} alt="thumbnail-product-2" className="rounded-md aspect-[8/7] md:hover:cursor-pointer"/>
                </span></div>
 
-               <div className={`${image===3?"relative border-2 border-main-orange": ""} w-[17%] rounded-md`}><span className={`${image==3?"absolute bg-gray-400 opacity-40": ""}`}> 
+               <div className={`${image===3?"relative border-2 border-main-orange": ""} w-[17%] rounded-md`}><span className={`${image===3?"absolute bg-gray-400 opacity-40": ""}`}> 
                <img onClick={ () =>{ setImage(3)}} src={imageThumbanil3} alt="thumbnail-product-3" className="rounded-md aspect-[8/7] md:hover:cursor-pointer"/>
                </span></div>
 
-               <div className={`${image===4?"relative border-2 border-main-orange": ""} w-[17%] rounded-md`}><span className={`${image==4?"absolute bg-gray-400  opacity-40": ""}`}> 
+               <div className={`${image===4?"relative border-2 border-main-orange": ""} w-[17%] rounded-md`}><span className={`${image===4?"absolute bg-gray-400  opacity-40": ""}`}> 
                <img onClick={ () =>{ setImage(4)}} src={imageThumbanil4} alt="thumbnail-product-4" className="rounded-md aspect-[8/7] md:hover:cursor-pointer"/>
                </span></div>
                 

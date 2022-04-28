@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 
 import imageProduct1 from "../images/image-product-1.jpg";
 import imageProduct2 from "../images/image-product-2.jpg";

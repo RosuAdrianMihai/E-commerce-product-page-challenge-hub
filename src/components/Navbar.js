@@ -39,10 +39,10 @@ function Navbar( { setMenuStatus, menuState, itemsInCart, setItemsInCart, imageS
           <div className="flex items-center lg:mb-1">
               <div className="pr-3 lg:pr-6">
 
-              <div className={`${(menuState == true || imageSlide == true)? "z-[-1]": ""} md:relative`}>
+              <div className={`${(menuState === true || imageSlide === true)? "z-[-1]": ""} md:relative`}>
               <img onClick={ () => setCart(!cart)} src={CartImage} alt="icon-cart" className="h-6 cursor-pointer"/>
               <div className="relative">
-              <div onClick={ () => setCart(!cart)} className={`absolute cursor-pointer bottom-[13px] left-[10px] md:bottom-3 md:left-3 w-6 h-6 2xl:w-7 2xl:h-7 text-white rounded-[50%] bg-main-orange text-center ${itemsInCart > 0 ? "block": "hidden"} ${(menuState==true || imageSlide == true)?"z-[-1]": ""}`}>{itemsInCart}</div>
+              <div onClick={ () => setCart(!cart)} className={`absolute cursor-pointer bottom-[13px] left-[10px] md:bottom-3 md:left-3 w-6 h-6 2xl:w-7 2xl:h-7 text-white rounded-[50%] bg-main-orange text-center ${itemsInCart > 0 ? "block": "hidden"} ${(menuState===true || imageSlide === true)?"z-[-1]": ""}`}>{itemsInCart}</div>
               </div>
               <Cart itemsInCart={itemsInCart} setItemsInCart={setItemsInCart} cart={cart} menuState={menuState} imageSlide={imageSlide}/>
               </div>

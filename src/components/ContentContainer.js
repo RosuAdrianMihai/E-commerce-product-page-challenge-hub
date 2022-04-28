@@ -50,7 +50,7 @@ function ContentContainer( {menuState, itemsInCart, image, setImage, setItemsInC
 
     return(
        <section className="flex flex-col md:grid-cols-2 md:grid md:px-[10%] md:gap-10 md:mt-[3vh]">
-         <div className={`relative flex items-center justify-between w-full ${(menuState == true || imageSlide == true) ? "z-[-10]": ""} md:items-start lg:pt-[9vh] md:pt-[5vh] lg:mt-[-7vh] `}>
+         <div className={`relative flex items-center justify-between w-full ${(menuState === true || imageSlide === true) ? "z-[-10]": ""} md:items-start lg:pt-[9vh] md:pt-[5vh] lg:mt-[-7vh] `}>
              <div onClick={() => changeImage(minus)}  className="bg-white flex items-center rounded-[50%] absolute left-[5%] p-2 justify-center hover:cursor-pointer md:hidden sm:left-[12%]">
              <img src={iconPrevious} alt="icon-previous" className="w-3 h-3 aspect-[1/1] max-w-[36px] mr-[2.5px]"/>
              </div>
@@ -62,19 +62,19 @@ function ContentContainer( {menuState, itemsInCart, image, setImage, setItemsInC
             <img onClick={ ()=>{if(width >= 900) setImageSlide(true)}} src={imageProduct4} alt="product-4" className={`aspect-[4/3] ${(image === 4)? "block": "hidden"} md:rounded-md  md:cursor-pointer`}/>
 
             <div className="hidden md:flex md:justify-between md:mt-[3vh]">
-               <div className={`${image==1?"relative border-2 border-main-orange": ""} w-[17%] rounded-md`}><span className={`${image==1?"absolute bg-gray-400 opacity-40": ""}`}> 
+               <div className={`${image===1?"relative border-2 border-main-orange": ""} w-[17%] rounded-md`}><span className={`${image==1?"absolute bg-gray-400 opacity-40": ""}`}> 
                <img onClick={ () =>{ setImage(1)}} src={imageThumbanil1} alt="thumbnail-product-1" className="rounded-md  aspect-[8/7] md:hover:cursor-pointer"/>
                </span></div>
 
-               <div className={`${image==2?"relative border-2 border-main-orange": ""} w-[17%] rounded-md`}><span className={`${image==2?"absolute bg-gray-400 opacity-40": ""}`}> 
+               <div className={`${image===2?"relative border-2 border-main-orange": ""} w-[17%] rounded-md`}><span className={`${image==2?"absolute bg-gray-400 opacity-40": ""}`}> 
                <img onClick={ () =>{ setImage(2)}} src={imageThumbanil2} alt="thumbnail-product-2" className="rounded-md aspect-[8/7] md:hover:cursor-pointer"/>
                </span></div>
 
-               <div className={`${image==3?"relative border-2 border-main-orange": ""} w-[17%] rounded-md`}><span className={`${image==3?"absolute bg-gray-400 opacity-40": ""}`}> 
+               <div className={`${image===3?"relative border-2 border-main-orange": ""} w-[17%] rounded-md`}><span className={`${image==3?"absolute bg-gray-400 opacity-40": ""}`}> 
                <img onClick={ () =>{ setImage(3)}} src={imageThumbanil3} alt="thumbnail-product-3" className="rounded-md aspect-[8/7] md:hover:cursor-pointer"/>
                </span></div>
 
-               <div className={`${image==4?"relative border-2 border-main-orange": ""} w-[17%] rounded-md`}><span className={`${image==4?"absolute bg-gray-400  opacity-40": ""}`}> 
+               <div className={`${image===4?"relative border-2 border-main-orange": ""} w-[17%] rounded-md`}><span className={`${image==4?"absolute bg-gray-400  opacity-40": ""}`}> 
                <img onClick={ () =>{ setImage(4)}} src={imageThumbanil4} alt="thumbnail-product-4" className="rounded-md aspect-[8/7] md:hover:cursor-pointer"/>
                </span></div>
                 
